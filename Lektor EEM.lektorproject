@@ -1,0 +1,18 @@
+[project]
+name = Lektor EEM
+
+[servers.production]
+name = Production
+enabled = no
+default = no
+target = rsync://solomon/var/www/emilyemorehouse.com
+
+[packages]
+lektor-s3 = 0.2.2
+lektor-webpack-support = 0.1
+
+[servers.s3]
+name = S3
+enabled = yes
+default = yes
+target = s3://emilyemorehouse.com

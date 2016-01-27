@@ -1,0 +1,15 @@
+_model: about
+---
+title: More about Morehouse:
+---
+body:
+<p>
+    I'm currently working in Tallahassee as part of <a href="http://www.cuttlesoft.com">Cuttlesoft</a>, a software development company focused on early-stage prototypes for startups.
+</p>
+<p>
+    I graduated in the summer of 2014 from Florida State University with degrees in theatre, criminology and computer science as well as minoring in mathematics and psychology (yeah, I was a little busy).
+</p>
+<p>
+    I'm interested in pursuing further research in the realm of programming language theory, particularly formal verification and parallelization, as well as application development with OSS.
+</p>
+<!-- Emily Morehouse is the co-founder and CTO of Cuttlesoft, a Tallahassee-based software development company.  She graduated from Florida State University in August of 2014 with degrees in Computer Science, Theatre, and Criminology.  She is passionate about building software that is intuitive and inspiring to use — for clients, users and developers.  Her areas of expertise include web application development, hybrid mobile development, scalable system architectures, and deployment automation. Here in Tallahassee, she is a co-organizer for PythonTLH, PyLadies and TallyJS. -->

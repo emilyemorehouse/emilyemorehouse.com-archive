@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{% block title %}Emily E Morehouse{% endblock %}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="founder/CTO at Cuttlesoft, organizer of pythonTLH, software engineer, CS researcher, brewer of coffee, drinker of teas, maker of faces. FSU '14.">
+
+        <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
+        <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/css/ie8.css'|url }}" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
+    </head>
+
+    <body {% if this.title == 'Home'%}class="landing"{% endif %} >
+        <div id='page-wrapper'>
+            {% include 'partials/header.html' %}
+
+            {% block body %}{% endblock %}
+
+            {% include 'partials/footer.html' %}
+        </div>
+        {% include 'partials/scripts.html' %}
+        {% block extra_js %}{% endblock %}
+    </body>
+
+</html>

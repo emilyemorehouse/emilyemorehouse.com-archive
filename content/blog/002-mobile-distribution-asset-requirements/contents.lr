@@ -1,0 +1,94 @@
+title: Mobile Distribution Requirements
+---
+pub_date: 2016-08-17
+---
+author: Emily E Morehouse
+---
+short: I need to remember this!
+---
+body:
+
+===================
+Asset Requirements:
+===================
+
+
+-----
+iOS:
+-----
+
+* App Icon
+	- 1024 x 1024
+	- JPG or PNG
+	- minimum resolution of 72 DPI
+	- RGB color space
+	- no layers or rounded corners
+* Screenshots
+	- full iPhone 6/6S Plus sized (NOT zoomed in, this can be annoying on smaller screens)
+		* JPG or PNG
+		* RGB color space
+		* 1242 x 2208 for portrait with status bar
+
+---------
+Android:
+---------
+
+* Screenshots
+	- minimum of 2, maximum of 8
+* Hi-res icon
+	- 512 x 512
+	- 32-bit PNG (with alpha)
+* Feature Graphic
+	- 1024 x 500
+	- 24-bit PNG or JPG
+* Promo Graphic
+	- 180 x 120
+	- 24-bit PNG or JPG
+* TV Banner
+	- 1280 x 720
+	- 24-bit PNG or JPG
+
+
+===================
+Other Requirements:
+===================
+
+-----
+iOS:
+-----
+
+*
+
+---------
+Android:
+---------
+
+* Title (max 30 characters)
+* Short description (max 80 characters)
+* Full description (max 4000 characters)
+* Application type (application or game)
+* Application category (choose from dropdown)
+* Email
+
+
+======================
+Optional Requirements:
+======================
+
+-----
+iOS:
+-----
+
+*
+
+---------
+Android:
+---------
+
+OPTIONAL:
+
+* Promo Video
+* Additional Screenshots (Tablet, Android TV, Android Wear)
+* Website
+* Phone
+* Privacy Policy

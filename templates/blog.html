@@ -1,11 +1,21 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog-short.html" import render_blog_short %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
+  <section id="three" class="wrapper style3 special">
+    <div class="inner">
+      <header class="major">
+        <h2>MUSINGS</h2>
+        <p>Mostly programming.</p>
+      </header>
+      <ul class="features">
+        {% for child in this.pagination.items %}
+          {{ render_blog_short(child, from_index=true) }}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 
   {{ render_pagination(this.pagination) }}
 {% endblock %}
@@ -19,6 +29,5 @@
 
     ga('create', 'UA-41557354-3', 'auto');
     ga('send', 'pageview', 'blog');
-
 </script>
 {% endblock %}

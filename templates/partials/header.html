@@ -12,6 +12,7 @@
 							{% for href, title in [
 			                    ['/about', 'About Me'],
 			                    ['/research', 'Research'],
+			                    ['/blog', 'Blog'],
 			                    ['/contact', 'Contact']
 			                ] %}
 			                    <li{% if this.is_child_of(href) %} class="active"{% endif
@@ -19,7 +20,6 @@
 			                {% endfor %}
 
 			                <!-- ['/projects', 'Projects'], -->
-		                    <!-- ['/blog', 'Blog'], -->
 
 						</ul>
 					</div>

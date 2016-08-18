@@ -1,5 +1,7 @@
 [project]
 name = Lektor EEM
+url = http://www.emilyemorehouse.com/
+url_style = absolute
 
 [servers.production]
 name = Production

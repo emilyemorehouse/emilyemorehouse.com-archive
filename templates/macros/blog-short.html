@@ -1,0 +1,33 @@
+{% macro render_blog_short(post, from_index=false) %}
+<li class="icon fa-paper-plane-o">
+  <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+  {% if post.short %}
+    <p>{{post.short}}</p>
+  {% endif %}
+</li>
+<!--
+    <p class="meta">
+      written by
+      {% if post.twitter_handle %}
+        <a href="https://twitter.com/{{ post.twitter_handle
+          }}">{{ post.author or post.twitter_handle }}</a>
+      {% else %}
+        {{ post.author }}
+      {% endif %}
+      on {{ post.pub_date }}
+    </p>
+-->
+{% endmacro %}
+
+
+
+
+
+
+
+
+
+<li class="icon fa-paper-plane-o">
+  <h3>Arcu accumsan</h3>
+  <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+</li>

@@ -10,8 +10,8 @@ default = no
 target = rsync://solomon/var/www/emilyemorehouse.com
 
 [packages]
-lektor-s3 = 0.2.2
 lektor-webpack-support = 0.1
+lektor-s3 = 0.4.0
 
 [servers.s3]
 name = S3

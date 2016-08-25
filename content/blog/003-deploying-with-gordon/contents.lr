@@ -7,3 +7,49 @@ author: Emily E Morehouse
 short:
 ---
 body:
+
+----------------
+What is Gordon?
+----------------
+Gordon is a CLI that allows you to manage deployments to AWS Lambda.
+Supports Lambdas written in Python (default), Java, Javascript, Java, and Scala.
+
+-------------
+Installation
+-------------
+
+`☿ pip install gordon`
+
+If you're on OSX El Capitan, use:
+
+`☿ pip install gordon --ignore-installed six`
+
+Why? Check this out. https://github.com/pypa/pip/issues/3165#issuecomment-145856429
+
+------------
+Quick Start
+------------
+Some terminology: Gordon organizes files into projects, and projects can contain multiple applications.
+
+To create a project:
+`☿ gordon startproject demo`
+which will create a project called 'demo' in your current directory, with the following files:
+```
+demo
+└── settings.yml
+```
+
+To create an application:
+`☿ gordon startapp firstapp`
+which will create an application called 'demo' in your current directory, with the following files:
+```
+firstapp/
+├── helloworld
+│   └── code.py
+└── settings.yml
+```
+
+These files are:
+
+* `code.py` : File where the source code of our first helloworld lambda will be. By default gordon creates a function called handler inside this file and registers it as the main handler.
+* `settings.yml` : Configuration related to this application. By default gordon registers a helloworld lambda function.

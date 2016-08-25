@@ -8,16 +8,28 @@
     <article id="main">
         <section class="wrapper style1">
             <div class="inner">
-                <h2>Want to talk?</h2>
-                <p>
-                    Address: 914 RAILROAD AVE, TALLAHASSEE, FL, 32310.
-                </p>
-                <p>
-                    Email: <a href="mailto:emily@cuttlesoft.com?Subject=Hello%20there!">emily@cuttlesoft.com.</a>
-                </p>
-                <p>
-                    Phone: 813 508 0183.
-                </p>
+                <h2 class="center">Want to talk?</h2>
+                <div class="row contact-row">
+                    <div class="3u">&nbsp;</div>
+                    <div class="2u right shift-padding">Address:</div>
+                    <div class="5u">2590 WALNUT STREET, DENVER, CO, 80205.<br>
+                        <span>and</span><br>
+                        914 RAILROAD AVE, TALLAHASSEE, FL, 32310.
+                    </div>
+                    <div class="2u">&nbsp;</div>
+                </div>
+                <div class="row contact-row">
+                    <div class="3u">&nbsp;</div>
+                    <div class="2u right shift-padding">Email:</div>
+                    <div class="5u"><a href="mailto:emily@cuttlesoft.com?Subject=Hello%20there!">emily@cuttlesoft.com.</a></div>
+                    <div class="2u">&nbsp;</div>
+                </div>
+                <div class="row contact-row">
+                    <div class="3u">&nbsp;</div>
+                    <div class="2u right shift-padding">Phone:</div>
+                    <div class="5u">813 508 0183.</div>
+                    <div class="2u">&nbsp;</div>
+                </div>
             </div>
         </section>
     </article>
@@ -25,10 +37,12 @@
     <script>
         function initMap() {
             var mapDiv = document.getElementById('map');
-            var myLatLng = {lat: 30.433827, lng: -84.289742};
+            var fl = {lat: 30.433827, lng: -84.289742};
+            var co = {lat: 39.758951, lng: -104.986185};
+            var center = {lat: 34.433827, lng: -94.289742};
             var map = new google.maps.Map(mapDiv, {
-                center: myLatLng,
-                zoom: 8,
+                center: co,
+                zoom: 10,
                 styles: [
                     {
                         "featureType": "water",
@@ -325,8 +339,13 @@
                 // ]
             });
 
-            var marker = new google.maps.Marker({
-                position: myLatLng,
+            var fl_marker = new google.maps.Marker({
+                position: fl,
+                map: map,
+                icon: '../img/marker.png'
+            });
+            var co_marker = new google.maps.Marker({
+                position: co,
                 map: map,
                 icon: '../img/marker.png'
             });

@@ -4,13 +4,20 @@
 
 {% block body %}
   <!-- Main -->
-	<article id="main">
+	<article id="main" class="about">
 		<header>
 			<h2>{{this.title}}</h2>
 		</header>
 		<section class="wrapper style5">
 			<div class="inner">
-				{{this.body}}
+				<div class="row">
+					<div class="4u">
+						<img src="{{ 'img/square face.jpeg' | asseturl }}" class="profile-picture">
+					</div>
+					<div class="8u">
+						{{this.body}}
+					</div>
+				</div>
 			</div>
 		</section>
 	</article>

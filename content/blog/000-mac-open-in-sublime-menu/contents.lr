@@ -10,9 +10,10 @@ Enable OSX Mountain Lion Context Menu Launch:
 
 Open Automator. Add new service.
 Search for "Run Shell Script". Drag over to the panel on the right (or double click it).
-Enter:
+Enter::
 
-/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n "$@"
+	/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n "$@"
+
 Set "Pass Input:" to "As Arguments"
 Set "Shell" to "bin/zsh"
 Set "Services Receives Selected:" to "files or folders"
@@ -21,17 +22,19 @@ To use: right-click on a file or folder, and click 'Open-in-Sublime' in the 'Ser
 
 Enable OSX Mountain Lion Terminal Launch:
 
-At the command line enter:
+At the command line enter::
 
-sudo mkdir /usr/local/bin
-Then enter:
+	sudo mkdir /usr/local/bin
 
-sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+Then enter::
+
+	sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+
 ln creates a link. -s makes it a symbolic link.
 You may need to prefix the command with sudo if it doesn't work.
 Restart the terminal.
-To use:
 
-user$ sublime . [This will open the current folder structure in Sublime]
+To use::
 
-user$ sublime <filename> [This will open the desired file in Sublime]
+	user$ sublime . [This will open the current folder structure in Sublime]
+	user$ sublime <filename> [This will open the desired file in Sublime]

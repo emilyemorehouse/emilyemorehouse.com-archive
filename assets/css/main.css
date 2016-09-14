@@ -2749,4 +2749,8 @@ body.is-mobile.landing #footer {
   width: 100%;
   border-radius: 100%; }
 
+.literal-block {
+  white-space: pre-wrap;
+  margin: 30px; }
+
 /*# sourceMappingURL=main.css.map */

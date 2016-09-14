@@ -1,0 +1,20 @@
+_hidden: no
+---
+title: Getting Down and Dirty with the CPython Source Code
+---
+pub_date: 2016-08-31
+---
+author: Emily E Morehouse
+---
+short: I'm on a mission to become one of the first FEMALE CPython Core developers.
+---
+body:
+
+About a year and a half ago, in April 2015, I attended my first ever PyCon [link]. This was my first experience at a truly technical conference and my first long-exposure with Python developers outside of my regular environment. It was a whirlwind of a week that I'd love to go into (and I'm sure one day I will), but that's not what this post is about.
+
+Amongst the many topics and issues that were discussed throughout the week[link], Guido van Rossum (Python's acclaimed BDFL) talked about the lack of gender diversity in the Python Core Developers team, which is comprised of all males. This is not something that's uncommon in the software world [link], but there have been many efforts to bring attention to this and find solutions for it [link(s)]. He announced that his goal was to have at least one female join the core developer team by the conference the following year.
+
+
+
+Becoming a Python Core Developer is an interesting process, as most of the people who work on the project are essentially volunteers. You aren't hand-picked, you aren't trained, and you certainly aren't entitled to becoming a Core Dev based on enthusiasm or skill alone. It takes time and dedication, one of the things that makes the Open Source community an amazing place to be [link]. In fact, the rules of being a Core Dev are more focused on attitude and contributions than anything else [link].
+

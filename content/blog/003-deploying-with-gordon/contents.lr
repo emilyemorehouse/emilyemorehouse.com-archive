@@ -1,4 +1,4 @@
-_hidden: no
+_hidden: yes
 ---
 title: Deploying to AWS Lambda Using Gordon
 ---
@@ -26,7 +26,7 @@ If you're on OSX El Capitan, use:
 
 `☿ pip install gordon --ignore-installed six`
 
-Why? Check this out. https://github.com/pypa/pip/issues/3165#issuecomment-145856429
+Why? Check [this](https://github.com/pypa/pip/issues/3165#issuecomment-145856429) out.
 
 ------------
 Quick Start

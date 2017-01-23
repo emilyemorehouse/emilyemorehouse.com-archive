@@ -20,11 +20,11 @@ Let’s begin.
 
 ## STANDARD FETCH/TEST/MERGE:
 
-### AQUIRE NEW CHANGES:
-1) First,  ensure that you don’t have any outstanding changes:
+### ACQUIRE NEW CHANGES:
+1) First, ensure that you don’t have any outstanding changes:
 `$ git status`
 
-2) Next, fetch the changes from the desired branch. Typically, this will be from a feature branch, as we encourage uses to utilize our standard branching structure. You can use the HTTPS url or SSH.
+2) Next, fetch the changes from the desired branch. Typically, this will be from a feature branch, as we encourage users to utilize our standard branching structure. You can use the HTTPS url or SSH.
 Using SSH:
 `$ git fetch git@bitbucket.org:emilyemorehouse/cuttle-repo.git feature/new-thing`
 Using HTTPS:

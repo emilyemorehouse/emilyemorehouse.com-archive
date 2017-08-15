@@ -2731,9 +2731,11 @@ body.is-mobile.landing #footer {
 
 /* Text selection */
 ::selection {
-  background: white; /* WebKit/Blink Browsers */ }
+  background: #7e6d66; /* WebKit/Blink Browsers */
+  color: white; }
 ::-moz-selection {
-  background: white; /* Gecko Browsers */ }
+  background: #7e6d66; /* Gecko Browsers */
+  color: white; }
 
 /* Contact */
 .row.contact-row .shift-padding {

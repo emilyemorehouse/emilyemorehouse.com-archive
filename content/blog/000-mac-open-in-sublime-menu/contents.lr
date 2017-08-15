@@ -1,4 +1,4 @@
-_hidden: yes
+_hidden: no
 ---
 title: Adding 'Open in Sublime' to Mac Context Menu
 ---
@@ -6,37 +6,36 @@ pub_date: 2016-07-12
 ---
 author: Emily E Morehouse
 ---
+short: A quick tutorial on creating a service to open files in Sublime via right-clicking.
+---
 body:
 
-Enable OSX Mountain Lion Context Menu Launch:
+## Enable OSX Sierra Context Menu Launch:
 
-Open Automator. Add new service.
-Search for "Run Shell Script". Drag over to the panel on the right (or double click it).
-Enter::
+_The process for older OSX versions is similar, so you should still be able to use this as a guide._
 
-	/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n "$@"
+1. Open up Automator (using Spotlight or finding it under "Applications") and click "New Document".
 
-Set "Pass Input:" to "As Arguments"
-Set "Shell" to "bin/zsh"
-Set "Services Receives Selected:" to "files or folders"
-Save as "Open-in-Sublime".
-To use: right-click on a file or folder, and click 'Open-in-Sublime' in the 'Services' menu at the bottom of the context menu.
+1. Select "Service" from the tiled menu.
 
-Enable OSX Mountain Lion Terminal Launch:
+1. Search for "Run Shell Script" in the upper left to find our action type. Drag it over to the main panel, or you can double click it.
 
-At the command line enter::
+1. In the top bar, set "Services receive selected" to "files or folders".
 
-	sudo mkdir /usr/local/bin
+1. Select your shell type of choice, or leave it as `/bin/bash` if you're unsure.
+Change the "Pass input" setting to "as arguments".
 
-Then enter::
+1. For __Sublime Text 3__, enter the following in the text input:
 
-	sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+  `/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n "$@"`
 
-ln creates a link. -s makes it a symbolic link.
-You may need to prefix the command with sudo if it doesn't work.
-Restart the terminal.
+  For __Sublime Text 2__, enter the following in the text input:
 
-To use::
+  `/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n "$@"`
 
-	user$ sublime . [This will open the current folder structure in Sublime]
-	user$ sublime <filename> [This will open the desired file in Sublime]
+1. Save as "Open in Sublime". You can save it as whatever you want, but this will become the display name of the service.
+
+Now when you right click on a file or folder, under "Services" you will see "Open in Sublime".
+
+I also set up a service for adding a file or directory to the current Sublime window. You can duplicate the process above using the `-a` flag instead of `-n` in the command, and name it something appropriate like "Open in Current Sublime Window".
+

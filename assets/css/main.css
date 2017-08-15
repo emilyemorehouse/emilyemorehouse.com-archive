@@ -2756,3 +2756,16 @@ body.is-mobile.landing #footer {
   margin: 30px; }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* CUSTOM */
+p img,
+li img {
+  width: 97%;
+}
+img[alt="screenshot of technical symbols picker"] {
+  height: 320px;
+  width: auto;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto; }

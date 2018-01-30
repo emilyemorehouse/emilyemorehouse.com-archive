@@ -135,7 +135,7 @@ Git hooks can be easily managed locally by using a `.git-template` directory. Yo
 ### Sharing Git Hooks
 The traditional way of managing Git hooks has some drawbacks, particularly that since they’re stored in your `.git` directory by default. This means they aren’t tracked in your repository.
 
-You could set up a system where your hooks are tracked outside of your `.git` directory, say in a `.hooks` directory, then set up a script to symlink your files into your `.git/hooks` directory ([check out a working example here](https://github.com/emilyemorehouse/git-hooked/tree/githook-dir-config)). Alternatively, you can configure Git to simply pull hooks from a different directory altogether by running `git config core.hooksPath .hooks` ([check out another example here](https://github.com/emilyemorehouse/git-hooked/tree/githook-dir-symlinked)).
+You could set up a system where your hooks are tracked outside of your `.git` directory, say in a `.hooks` directory, then set up a script to symlink your files into your `.git/hooks` directory ([check out a working example here](https://github.com/emilyemorehouse/git-hooked/tree/githook-dir-symlinked)). Alternatively, you can configure Git to simply pull hooks from a different directory altogether by running `git config core.hooksPath .hooks` ([check out another example here](https://github.com/emilyemorehouse/git-hooked/tree/githook-dir-config)).
 
 ### Side-Stepping Git Hooks Altogether
 If you’ve gone through the trouble of setting up linting or code formatting, you’ve probably already set up a script to run with something like `npm run lint`. With the help of a tool called [Husky](https://github.com/typicode/husky/tree/master), we can leverage our scripts that we’ve already set up by using them as Git hooks.

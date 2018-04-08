@@ -2,4 +2,5 @@ _model: projects
 ---
 title: Projects
 ---
-_hidden: yes
+interests:
+programming languages, compilers, algorithms..

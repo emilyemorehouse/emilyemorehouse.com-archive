@@ -10,19 +10,17 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
         <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
-        <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+        <link rel="stylesheet" href="{{ '/style.css'|url }}" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
         <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/css/ie8.css'|url }}" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
     </head>
 
-    <body {% if this.title == 'Home'%}class="landing"{% endif %} >
-        <div id='page-wrapper'>
-            {% include 'partials/header.html' %}
+    <body id="wrapper" class="divided" {% if this.title == 'Home'%}class="landing"{% endif %} >
+        {% include 'partials/header.html' %}
+        {% block body %}{% endblock %}
+        {% include 'partials/footer.html' %}
 
-            {% block body %}{% endblock %}
-
-            {% include 'partials/footer.html' %}
-        </div>
         {% include 'partials/scripts.html' %}
         {% block extra_js %}{% endblock %}
     </body>

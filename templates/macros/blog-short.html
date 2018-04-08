@@ -1,10 +1,11 @@
 {% macro render_blog_short(post, from_index=false) %}
-<li class="icon fa-paper-plane-o">
-  <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
-  {% if post.short %}
-    <p>{{post.short}}</p>
-  {% endif %}
-</li>
+<section>
+    <span class="icon style2 major fa-paper-plane-o"></span>
+    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    {% if post.short %}
+        <p>{{post.short}}</p>
+    {% endif %}
+</section>
 <!--
     <p class="meta">
       written by
@@ -18,16 +19,3 @@
     </p>
 -->
 {% endmacro %}
-
-
-
-
-
-
-
-
-
-<li class="icon fa-paper-plane-o">
-  <h3>Arcu accumsan</h3>
-  <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>

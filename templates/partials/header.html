@@ -1,26 +1,26 @@
 <!-- Header -->
-    <header id="header" class="alt">
-        <h1><a href="{{ '/'|url }}">Emily E Morehouse</a></h1>
-        <nav id="nav">
-            <ul>
-                <li class="special">
-                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                    <div id="menu">
-                        <ul>
-                            <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Home</a></li>
+	<header id="header" class="alt">
+		<h1><a href="{{ '/'|url }}">{{bag('content.header.title')}}</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"></a>
+					<div id="menu" class="invert color1">
+						<ul>
+							<li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Home</a></li>
 
-                            {% for id, item in bag('menu').items() %}
-                                {% set current = site.get(item.path) %}
-                                {% if not current.is_hidden %}
-                                    <li{% if this.is_child_of(item.path) %} class="active"{% endif
-                                        %}><a href="{{ item.path|url }}">{{ item.label }}</a></li>
-                                    {{item.is_hidden}}
-                                {% endif %}
-                            {% endfor %}
+							{% for id, item in bag('menu').items() %}
+								{% set current = site.get(item.path) %}
+								{% if not current.is_hidden %}
+									<li{% if this.is_child_of(item.path) %} class="active"{% endif
+										%}><a href="{{ item.path|url }}">{{ item.label }}</a></li>
+									{{item.is_hidden}}
+								{% endif %}
+							{% endfor %}
 
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>

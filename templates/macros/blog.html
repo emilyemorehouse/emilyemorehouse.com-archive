@@ -6,7 +6,7 @@
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../img' + post|url + 'header.jpg);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../img' + post|url + 'header.jpg);
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../img' + post|url + 'header.jpg);
-	' if post.has_header else ' '}}">
+	' if post.has_header else ''}}">
 		{% if from_index %}
 			<h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
 			<h4>{{ post.short }}</h4>
@@ -16,13 +16,7 @@
 		{% endif %}
 
 		<p class="meta">
-			written by
-			{% if post.twitter_handle %}
-				<a href="https://twitter.com/{{ post.twitter_handle}}">{{ post.author or post.twitter_handle }}</a>
-			{% else %}
-				{{ post.author }}
-			{% endif %}
-			on {{ post.pub_date }}
+			written on {{ post.pub_date }}
 		</p>
 	</header>
 

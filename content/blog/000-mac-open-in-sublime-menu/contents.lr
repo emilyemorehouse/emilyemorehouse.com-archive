@@ -8,6 +8,8 @@ author: Emily E Morehouse
 ---
 short: A quick tutorial on creating a service to open files in Sublime via right-clicking.
 ---
+has_header: yes
+---
 body:
 
 ## Enable OSX Sierra Context Menu Launch:

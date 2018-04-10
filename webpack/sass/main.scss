@@ -2,7 +2,8 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-// @import 'font-awesome.min.css';
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/fa-solid.scss';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i');
 
 /*
@@ -23,7 +24,7 @@
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
-		grid: ( gutters: 2rem )
+		grid: true
 	));
 
 	@mixin color($p) {
@@ -157,7 +158,7 @@
 
 	@import 'layout/wrapper';
 
-// Header
+// Header.
 	#header {
 		@include vendor('transition', 'background-color #{_duration(transitions)} ease');
 		background: _palette(bg);
@@ -217,7 +218,7 @@
 							position: relative;
 
 							&:after {
-								background-image: url('images/bars.svg');
+								background-image: url('images/bars-light.svg');
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -226,11 +227,17 @@
 								vertical-align: top;
 								width: 2em; }
 
+							&.dark:after {
+								background-image: url('images/bars.svg'); }
+
 							@include breakpoint(small) {
 								padding: 0 1.5em;
 
 								span {
-									display: none; } } }
+									display: none; }
+
+								&.dark:after {
+									background-image: url('images/bars-light.svg'); } } }
 
 						@include breakpoint(small) {
 							padding: 0 0 0 1.5em; } }
@@ -257,8 +264,8 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 12em 3em 6em 3em;
-		height: 50vh;
+		padding: 10em 3em 8em 3em;
+		min-height: 50vh;
 
 		> h2, h4, p {
 			color: #fff;
@@ -268,7 +275,7 @@
 			margin: 0 0 1em 0;
 			text-transform: uppercase; } }
 
-// Menu
+// Menu.
 	#menu {
 		@include vendor('transform', 'translateY(-100vh)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
@@ -333,7 +340,12 @@
 	body.is-menu-visible #menu {
 			@include vendor('transform', 'translateX(0)'); }
 
-// Custom
+// Typography.
+	h1, h2, h3, h4 {
+		font-family: "Overpass Mono", monospace;
+	}
+
+// Custom.
 	html {
 		background-color: map-get($palette, accent); }
 	#wrapper {
@@ -348,3 +360,26 @@
 
 	#lektor-edit-link {
 		display: none; }
+
+	 img, li img {
+		width: 97%; }
+
+	.banner.style2 .content {
+		h1, h2, h3, h4, p {
+			font-weight: 800;
+			letter-spacing: 0.225em;
+			line-height: 1em;
+			margin: 0 0 1em 0;
+			text-transform: uppercase; }
+
+		&.has-image {
+			h1, h2, h3, h4, p {
+				color: map-get($palette, bg);
+				text-shadow: 1px 1px map-get($palette, fg); } } }
+
+
+	.pagination {
+		padding: 1rem; }
+
+	ul.icons li {
+		border-top: none; }

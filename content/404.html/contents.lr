@@ -1,6 +1,9 @@
 title:
 ---
 body:
-<h1 style="font-size: 1700%; text-align: center; margin-bottom: 10%;">404</h1>
-<h4 style="margin: 0 130px 0 130px;">The page you requested does not exist.  Maybe it has been removed or
-deleted or you made a typo when copy/pasting or typing it.<h4>
+<section class="banner" style="height: 62vh;">
+    <h1 style="font-size: 1700%; text-align: center; margin-bottom: 10%;">404</h1>
+    <h4 style="margin: 0 130px 0 130px;">
+        The page you requested does not exist.  Maybe it has been removed or deleted or you made a typo when copy/pasting or typing it.
+    <h4>
+</section>

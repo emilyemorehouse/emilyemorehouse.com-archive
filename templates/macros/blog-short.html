@@ -1,33 +1,27 @@
 {% macro render_blog_short(post, from_index=false) %}
-<li class="icon fa-paper-plane-o">
-  <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
-  {% if post.short %}
-    <p>{{post.short}}</p>
-  {% endif %}
-</li>
-<!--
-    <p class="meta">
-      written by
-      {% if post.twitter_handle %}
-        <a href="https://twitter.com/{{ post.twitter_handle
-          }}">{{ post.author or post.twitter_handle }}</a>
-      {% else %}
-        {{ post.author }}
+<section class="banner style2">
+    <div class="content {{'has-image' if post.has_header else ''}}">
+      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+
+      {% if post.short %}
+          <p>{{post.short}}</p>
       {% endif %}
-      on {{ post.pub_date }}
-    </p>
--->
+
+      <p class="meta">
+        written on {{ post.pub_date }}
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="{{'../../img' + post|url + 'header.jpg'}}" alt="" />
+    </div>
+</section>
+
+<!-- ORIGINAL -->
+<!-- <section>
+    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    {% if post.short %}
+        <p>{{post.short}}</p>
+    {% endif %}
+</section> -->
 {% endmacro %}
-
-
-
-
-
-
-
-
-
-<li class="icon fa-paper-plane-o">
-  <h3>Arcu accumsan</h3>
-  <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>

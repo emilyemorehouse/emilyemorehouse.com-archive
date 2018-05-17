@@ -8,6 +8,8 @@ author: Emily E Morehouse
 ---
 short: The long and short of integrating Rollbar with Ionic to catch native and Javascript errors.
 ---
+has_header: yes
+---
 body:
 
 No software is error-free. One of the most frustrating things for me is when a user comes to me and says "I have this error but I don't know how I caused it and I can't reproduce it, but here's a screenshot of a blank screen proving that it happened!". This is entirely not the user's fault and I'm always grateful when I know that errors exist in the wild that I haven't caught via testing. It's disconcerting when I know that somewhere out in the digital ether, a console error was lost into deep iPhone space; a signal lost that can never be retrieved. Well. Not anymore.

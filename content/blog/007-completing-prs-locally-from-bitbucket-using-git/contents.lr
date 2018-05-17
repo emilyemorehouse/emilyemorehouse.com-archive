@@ -8,6 +8,8 @@ author: Emily E Morehouse
 ---
 short: Quick tutorial on various methods to checkout and merge pull requests from Bitbucket using Git.
 ---
+has_header: yes
+---
 body:
 
 For this example, we’ll use the repository ‘cuttle-repo’ from Cuttlesoft that has been forked by user emilyemorehouse.

@@ -8,6 +8,8 @@ author: Emily E Morehouse
 ---
 short: Quick tips on ensuring that your PRs are clean and easy to merge.
 ---
+has_header: yes
+---
 body:
 
 # Clean Pull Requests with Git

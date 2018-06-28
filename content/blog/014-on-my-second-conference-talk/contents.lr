@@ -12,12 +12,12 @@ short: Reflections and tips that I learned from proposing, planning, and giving 
 ---
 body:
 
-Less than 6 months ago, I wrote a [retro on my first conference talk](http://emilyemorehouse.com/blog/013-on-my-first-conference-talk). Since then, I've already learned a lot and want to share that knowledge and continue with keeping my process and (my) reality of speaking at conferences as open as possible.
+Less than 6 months ago, I wrote a [retro on my first conference talk](http://emilyemorehouse.com/blog/013-on-my-first-conference-talk). Since then, I've already learned a lot and want to share that knowledge and continue with my ritual of sharing the reality (read: my reality) of speaking at conferences as open as possible.
 
 If you didn't read my previous post, you don't necessarily need to, but you may want to reference these:
 
-* [My repo with all of my conference talk proposals](https://github.com/emilyemorehouse/conference-talk-proposals)
-* [My repository with my first presentation/notes/code playground](https://github.com/emilyemorehouse/ast-and-me)
+* [Repository with all of my conference talk proposals](https://github.com/emilyemorehouse/conference-talk-proposals)
+* [Repository with my first presentation/notes/code playground](https://github.com/emilyemorehouse/ast-and-me)
 
 You may also want to check out my [second talk repo and code examples](https://github.com/emilyemorehouse/what-to-expect-when-youre-expecting).
 
@@ -34,7 +34,7 @@ Here's a breakdown of the time I spent proposing and preparing my first and seco
     * Proposal: 4 hours
     * DinosaurJS prep (Conference 1): 23 hours
 
-So all in all, from proposal to first presentation I spent 11 hours less on my second talk than my first. Some of this is definitely based on the type of content I was working with. I spent a lot more time creating diagrams for The AST and Me, though I probably spent about the same amount of time trying out ideas and getting code snippets together.
+So all in all, from proposal to first presentation I spent 11 hours less preparing for my second talk than my first. Some of this is definitely based on the type of content I was working with. I spent a lot more time creating diagrams for The AST and Me, though I probably spent about the same amount of time trying out ideas and getting code snippets together.
 
 ## Talk-Writing Technique
 

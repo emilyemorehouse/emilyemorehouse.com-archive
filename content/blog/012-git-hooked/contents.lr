@@ -46,7 +46,7 @@ To use a git hook, simply create the script and make sure it’s executable (`ch
 *Pro-tip:* If you want to run the same script on different triggers, simply create the first trigger script and symlink the duplicates.
 
 ## Your First Git Hooks
-The following two examples are a couple of my go-to hooks that any Javascript project I’m working on has. Simple add these to your `.git/hooks` directory in the appropriate file and make sure the scripts are executable.
+The following two examples are a couple of my go-to hooks that any Javascript project I’m working on has. Simply add these to your `.git/hooks` directory in the appropriate file and make sure the scripts are executable.
 
 ### Lint and Format Your Code before committing
 This hook runs before you commit your code and will only run on your staged Javascript files. It runs Prettier for code formatting then runs ESLint to check for any linting errors. If it passes, your commit will go through. Otherwise, it will alert you and stop the commit process so you can make changes.
@@ -91,7 +91,7 @@ do
 done
 
 if ! $PASS; then
-  echo "\n${RED}COMMIT FAILED:${NC}\n\tYour commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again.\n\tTo override this validation, use --no-validate"
+  echo "\n${RED}COMMIT FAILED:${NC}\n\tYour commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again.\n\tTo override this validation, use --no-verify"
   exit 1
 else
   echo "\n${GREEN}COMMIT SUCCEEDED${NC}"
